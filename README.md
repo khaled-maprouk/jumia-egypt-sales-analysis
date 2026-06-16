@@ -1,19 +1,17 @@
-# Jumia Egypt — E-Commerce Sales Analysis
+Jumia Egypt — Sales & Profitability Dashboard | Power BI
 
-## Overview
-Executive sales dashboard analyzing e-commerce performance across 4 years (2011–2014) using Excel, Power BI, Power Query, and DAX.
+Built an end-to-end sales analytics dashboard for a ~10,000-order e-commerce dataset modeled after Jumia Egypt's operations, covering the period from 2011 to 2014.
+Data Modeling:
 
-## Key Insights
-- Total Orders: 9,996
-- Net Revenue: 9.89M
-- Net Profit: 1.75M
-- Profit Margin: 18%
-- Average Order Value: 989.87
-- Peak Year: 2013
-- Customer Growth: 596 → 695
+Resolved a many-to-many relationship between the Orders and Products tables by designing two bridge tables (orders_bridge & products_bridge) using Power Query Merge, resulting in a clean star-schema model across 6 tables with reliable cross-filtering and zero DAX calculation errors.
+Dashboard Pages (8 pages):
 
-## Tools Used
-- Microsoft Excel
-- Power BI
-- Power Query
-- DAX
+Executive Overview · Geography · Discount Analysis · Category Analysis · Customer Analysis · Date Trends · Forecast
+Key Metrics & Insights:
+
+Net Revenue: $9.89M | Net Profit: $1.75M | Profit Margin: 18%
+California was the top state driving $1.97M in revenue
+Orders with 30%+ discounts yielded a -37% profit margin vs. +29% with no discount
+Office Supplies led profitability at $833K across all categories
+
+Tools: Power BI · DAX · Power Query · Data Modeling
